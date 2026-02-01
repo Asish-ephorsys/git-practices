@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Login</title>
+    <link rel="stylesheet" href="dashboard.css" />
+  </head>
+  <body>
+    <!-- AUTH MODAL -->
+    <div class="auth-modal" id="authModal">
+      <!-- <div class="auth-box"> -->
+      <form id="loginForm">
+        <h2 id="authTitle">Admin Panel</h2>
+
+        <input
+          type="email"
+          id="username"
+          placeholder="Username"
+          autocomplete="off"
+          required
+        />
+
+        <input
+          type="password"
+          id="password"
+          placeholder="Password"
+          autocomplete="new-password"
+          required
+        />
+        <div id="errorMessage" style="color: red"></div>
+        <button type="submit">Login</button>
+      </form>
+    </div>
+
+    <!-- POPUP MESSAGE -->
+    <div class="popup-msg" id="popupMsg"></div>
+
+    <script src="login.js"></script>
+  </body>
+</html>
